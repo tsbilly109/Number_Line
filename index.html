@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Number Line</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hud">
+    <div class="hud-info">
+      <span id="stage" class="stage">ステージ 1</span>
+      <span id="progress" class="progress">1 / 2</span>
+    </div>
+    <p id="hint" class="hint">1 から順番に、数字を線でつなごう</p>
+    <button id="restart" class="restart" type="button">最初から</button>
+  </header>
+  <main class="board-wrap">
+    <canvas id="board" aria-label="数字をつなぐゲーム盤"></canvas>
+    <div id="overlay" class="overlay" hidden>
+      <div class="overlay-card">
+        <p id="overlay-title" class="overlay-title">クリア！</p>
+        <p id="overlay-sub" class="overlay-sub"></p>
+      </div>
+    </div>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
